@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node -r ./patch-node24.cjs ./node_modules/next/dist/bin/next dev -p 3005",
-    "build": "node -r ./patch-node24.cjs ./node_modules/next/dist/bin/next build",
+    "build": "node ./scripts/build.cjs",
     "start": "node -r ./patch-node24.cjs ./node_modules/next/dist/bin/next start -p 3005",
     "lint": "next lint"
   },

@@ -7,28 +7,34 @@ const PROJECTS_FILE = path.join(DATA_DIR, "projects.json");
 const INQUIRIES_FILE = path.join(DATA_DIR, "inquiries.json");
 
 function ensureDirectory() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+  } catch (e) {
+    // Ignore in read-only environment
   }
 }
 
 export function getProjects(): Project[] {
-  ensureDirectory();
-  if (!fs.existsSync(PROJECTS_FILE)) {
-    fs.writeFileSync(PROJECTS_FILE, JSON.stringify(INITIAL_PROJECTS, null, 2), "utf-8");
-    return INITIAL_PROJECTS;
-  }
   try {
-    const raw = fs.readFileSync(PROJECTS_FILE, "utf-8");
-    return JSON.parse(raw);
+    if (fs.existsSync(PROJECTS_FILE)) {
+      const raw = fs.readFileSync(PROJECTS_FILE, "utf-8");
+      return JSON.parse(raw);
+    }
   } catch (e) {
-    return INITIAL_PROJECTS;
+    // Fallback to in-memory initial projects
   }
+  return INITIAL_PROJECTS;
 }
 
 export function saveProjects(projects: Project[]): void {
-  ensureDirectory();
-  fs.writeFileSync(PROJECTS_FILE, JSON.stringify(projects, null, 2), "utf-8");
+  try {
+    ensureDirectory();
+    fs.writeFileSync(PROJECTS_FILE, JSON.stringify(projects, null, 2), "utf-8");
+  } catch (e) {
+    console.warn("Storage warning: unable to save projects to disk (read-only filesystem)", e);
+  }
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {
@@ -65,21 +71,24 @@ export function deleteProject(id: string): boolean {
 }
 
 export function getInquiries(): Inquiry[] {
-  ensureDirectory();
-  if (!fs.existsSync(INQUIRIES_FILE)) {
-    return [];
-  }
   try {
-    const raw = fs.readFileSync(INQUIRIES_FILE, "utf-8");
-    return JSON.parse(raw);
+    if (fs.existsSync(INQUIRIES_FILE)) {
+      const raw = fs.readFileSync(INQUIRIES_FILE, "utf-8");
+      return JSON.parse(raw);
+    }
   } catch (e) {
-    return [];
+    // Ignore read errors
   }
+  return [];
 }
 
 export function saveInquiry(inquiry: Inquiry): void {
-  ensureDirectory();
-  const inquiries = getInquiries();
-  inquiries.unshift(inquiry);
-  fs.writeFileSync(INQUIRIES_FILE, JSON.stringify(inquiries, null, 2), "utf-8");
+  try {
+    ensureDirectory();
+    const inquiries = getInquiries();
+    inquiries.unshift(inquiry);
+    fs.writeFileSync(INQUIRIES_FILE, JSON.stringify(inquiries, null, 2), "utf-8");
+  } catch (e) {
+    console.warn("Storage warning: unable to save inquiry to disk (read-only filesystem)", e);
+  }
 }

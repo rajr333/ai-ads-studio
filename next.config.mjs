@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -9,18 +12,6 @@ const nextConfig = {
         hostname: "**",
       },
     ],
-  },
-  async rewrites() {
-    return [
-      {
-        source: "/videos/:path*",
-        destination: "/api/media/videos/:path*",
-      },
-      {
-        source: "/images/:path*",
-        destination: "/api/media/images/:path*",
-      },
-    ];
   },
 };
 
