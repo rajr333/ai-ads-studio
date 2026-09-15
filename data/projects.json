@@ -1,0 +1,272 @@
+[
+  {
+    "service": "AI Video Ads",
+    "industry": "JEWELLERY",
+    "year": "2026",
+    "format": "9:16",
+    "title": "AURA GOLD NECKLACE",
+    "thumbnailUrl": "/images/jewellery-concept.png",
+    "category": "Fine Jewellery",
+    "featured": true,
+    "tagline": "Haute joaillerie diamond facet reflection ad.",
+    "status": "published",
+    "client": "AURUM ATELIER",
+    "slug": "aura-gold-necklace",
+    "isSpec": true,
+    "videoUrl": "/videos/1789064078539_Model_showcasing_festive_jewelry__1080p_20260910221808.mp4",
+    "id": "proj-1789064011290",
+    "order": 1789064011290,
+    "overview": "Haute joaillerie diamond facet reflection ad.",
+    "theIdea": "Engineered to deliver high visual friction and prestige brand positioning in mobile feeds.",
+    "theApproach": {
+      "visualDirection": "Editorial commercial noir with dramatic rim light.",
+      "background": "Deep obsidian architectural set with subtle reflections.",
+      "lighting": "High-contrast chiaroscuro key with liquid edge reflections.",
+      "character": "Solo dynamic talent interacting with hero product.",
+      "productStyling": "Pristine product geometry with razor-sharp branding.",
+      "cameraMovement": "Slow cinematic orbital tracking transitioning to macro detail.",
+      "storytelling": "From raw material tension to triumphant commercial finish."
+    },
+    "theResult": "Commercial-grade video master optimized for paid social conversion.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "ORIGINAL PRODUCT",
+        "description": "Studio packshot and CAD specifications."
+      },
+      {
+        "step": "02",
+        "title": "CREATIVE CONCEPT",
+        "description": "Art direction moodboards and color scheme."
+      },
+      {
+        "step": "03",
+        "title": "AI KEYFRAME GENERATION",
+        "description": "Photorealistic style-locked keyframe generation."
+      },
+      {
+        "step": "04",
+        "title": "AI MOTION SYNTHESIS",
+        "description": "Generative video diffusion simulation."
+      },
+      {
+        "step": "05",
+        "title": "FINAL COMMERCIAL MASTER",
+        "description": "Sound-synced color-graded export."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Hook Shot",
+        "duration": "0.0s - 1.5s",
+        "camera": "Dynamic macro reveal",
+        "purpose": "3-second thumb-stopping scroll hook",
+        "description": "Product breaches the frame under moving light.",
+        "thumbnailUrl": "/images/jewellery-concept.png"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/images/jewellery-concept.png",
+      "aiConceptImg": "/images/jewellery-concept.png",
+      "finalAdVideo": "/videos/perfume-liquid-gold.mp4"
+    }
+  },
+  {
+    "id": "proj-long-01",
+    "slug": "cinematic-product-commercial",
+    "title": "CINEMATIC PRODUCT COMMERCIAL",
+    "tagline": "High-fidelity AI commercial production engineered for premium brand prestige.",
+    "client": "COMMERCIAL SPEC CREATIVE",
+    "isSpec": true,
+    "industry": "LUXURY",
+    "category": "Commercial Production",
+    "service": "Product Commercials",
+    "year": "2026",
+    "format": "16:9",
+    "creativeAngle": "Broadcast Grade Studio Lighting & Fluid Macro Choreography",
+    "videoUrl": "/videos/long-ad-product-01.mp4",
+    "thumbnailUrl": "/images/product-hero-perfume.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 1,
+    "overview": "A high-impact cinematic commercial designed for multi-channel brand positioning with broadcast-grade generative cinematography.",
+    "theIdea": "Commanding viewer attention through pristine lighting transitions and dynamic camera motion.",
+    "theApproach": {
+      "visualDirection": "Warm studio lighting with dramatic rim reflections and razor-sharp product detail.",
+      "background": "Architectural minimalist studio environment.",
+      "lighting": "Chiaroscuro key with golden accents and specular reflections.",
+      "character": "Solo dynamic interaction with product.",
+      "productStyling": "Master studio placement with sharp branding fidelity.",
+      "cameraMovement": "Sweeping orbital tracking with macro reveal.",
+      "storytelling": "From anticipation to triumphant commercial delivery."
+    },
+    "theResult": "A full-length 16:9 commercial master delivering high conversion and brand memorability.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "PRODUCT CAD & PACKSHOT",
+        "description": "High-res reference geometry setup."
+      },
+      {
+        "step": "02",
+        "title": "CINEMATIC DIRECTION",
+        "description": "Studio lighting and angle storyboard."
+      },
+      {
+        "step": "03",
+        "title": "AI MOTION GENERATION",
+        "description": "Diffusion-based camera move synthesis."
+      },
+      {
+        "step": "04",
+        "title": "COLOR GRADE & SOUND",
+        "description": "Broadcast master export."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Hero Commercial Shot",
+        "duration": "0:00 - 0:10",
+        "camera": "Cinematic Orbit",
+        "purpose": "Prestige brand commercial",
+        "description": "Product highlighted under dynamic studio illumination.",
+        "thumbnailUrl": "/images/product-hero-perfume.jpg"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/images/product-hero-perfume.jpg",
+      "aiConceptImg": "/images/product-hero-perfume.jpg",
+      "finalAdVideo": "/videos/long-ad-product-01.mp4"
+    }
+  },
+  {
+    "id": "proj-long-02",
+    "slug": "dynamic-vertical-product-sprint",
+    "title": "DYNAMIC VERTICAL PRODUCT SPRINT",
+    "tagline": "Thumb-stopping 9:16 direct-response commercial with high-converting visual friction.",
+    "client": "DIRECT RESPONSE SPRINT",
+    "isSpec": true,
+    "industry": "TECH",
+    "category": "Direct Response & Social Ads",
+    "service": "AI Video Ads",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Fast-Paced Mobile Hook + High Shutter Product Immersion",
+    "videoUrl": "/videos/long-ad-product-02.mp4",
+    "thumbnailUrl": "/images/tech-audio.png",
+    "featured": true,
+    "status": "published",
+    "order": 2,
+    "overview": "Engineered specifically for 9:16 mobile feeds (Instagram Reels & TikTok) to drive immediate click-through and purchase intent.",
+    "theIdea": "First 3 seconds break feed scroll patterns through aggressive visual hook and hyper-realistic product texture.",
+    "theApproach": {
+      "visualDirection": "High-energy mobile editorial with vibrant contrast and clean cuts.",
+      "background": "Modern urban studio backdrop.",
+      "lighting": "Dynamic daylight with neon edge highlights.",
+      "character": "Engaging talent interacting with product in real-world context.",
+      "productStyling": "Hero product front and center.",
+      "cameraMovement": "Quick push-ins and vertical tilts.",
+      "storytelling": "Problem-to-solution visual progression."
+    },
+    "theResult": "High-performing 9:16 vertical commercial optimized for social media ad performance.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "HOOK SCRIPTING",
+        "description": "Thumb-stopping angle development."
+      },
+      {
+        "step": "02",
+        "title": "MOTION SYNTHESIS",
+        "description": "AI generated hyper-realistic action."
+      },
+      {
+        "step": "03",
+        "title": "SOCIAL MASTER",
+        "description": "Sound-synced 9:16 delivery."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Hook Sequence",
+        "duration": "0:00 - 0:10",
+        "camera": "Rapid vertical push",
+        "purpose": "Scroll stopping",
+        "description": "Dynamic reveal of product in high-energy flow.",
+        "thumbnailUrl": "/images/tech-audio.png"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/images/tech-audio.png",
+      "aiConceptImg": "/images/tech-audio.png",
+      "finalAdVideo": "/videos/long-ad-product-02.mp4"
+    }
+  },
+  {
+    "id": "proj-long-03",
+    "slug": "studio-lighting-commercial-reveal",
+    "title": "STUDIO LIGHTING COMMERCIAL REVEAL",
+    "tagline": "Broadcast-grade cinematic lighting choreography and sensory product transformation.",
+    "client": "PRESTIGE BRAND CAMPAIGN",
+    "isSpec": true,
+    "industry": "LUXURY",
+    "category": "Brand Commercials",
+    "service": "Product Commercials",
+    "year": "2026",
+    "format": "16:9",
+    "creativeAngle": "Chiaroscuro Illumination + Precision Industrial Design",
+    "videoUrl": "/videos/long-ad-product-03.mp4",
+    "thumbnailUrl": "/images/luxury-watch.png",
+    "featured": true,
+    "status": "published",
+    "order": 3,
+    "overview": "A high-end cinematic product film emphasizing precision engineering, metallic reflections, and luxury brand prestige.",
+    "theIdea": "Visualizing craftsmanship through slow moving lighting beams that sculpt the physical geometry of the product.",
+    "theApproach": {
+      "visualDirection": "Haute horlogerie and luxury commercial noir aesthetic.",
+      "background": "Obsidian stone and dark glass floor reflections.",
+      "lighting": "Laser-precision blade lighting sweeping across surfaces.",
+      "character": "Minimalist luxury atmosphere.",
+      "productStyling": "Pristine macro product inspection.",
+      "cameraMovement": "Slow gliding horizontal rail tracking.",
+      "storytelling": "The revelation of perfection."
+    },
+    "theResult": "A full broadcast-quality 16:9 commercial master delivering commanding presence.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "LIGHT RIG DESIGN",
+        "description": "Virtual studio lighting setup."
+      },
+      {
+        "step": "02",
+        "title": "MACRO SYNTHESIS",
+        "description": "Photorealistic reflection rendering."
+      },
+      {
+        "step": "03",
+        "title": "CINEMATIC FINISH",
+        "description": "4K graded commercial master."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Light Sweep",
+        "duration": "0:00 - 0:10",
+        "camera": "Gliding macro rail",
+        "purpose": "Atmospheric prestige hook",
+        "description": "Light beam reveals the pristine facets of the product.",
+        "thumbnailUrl": "/images/luxury-watch.png"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/images/luxury-watch.png",
+      "aiConceptImg": "/images/luxury-watch.png",
+      "finalAdVideo": "/videos/long-ad-product-03.mp4"
+    }
+  }
+]
