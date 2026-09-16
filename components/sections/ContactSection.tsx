@@ -12,7 +12,7 @@ export default function ContactSection() {
     product: "",
     industry: "LUXURY",
     serviceNeeded: "AI Video Ads",
-    budgetRange: "$3,000 - $5,000",
+    budgetRange: "1 Video Ad (₹2,500)",
     message: "",
   });
 
@@ -43,7 +43,7 @@ export default function ContactSection() {
         product: "",
         industry: "LUXURY",
         serviceNeeded: "AI Video Ads",
-        budgetRange: "$3,000 - $5,000",
+        budgetRange: "1 Video Ad (₹2,500)",
         message: "",
       });
     } catch (err: any) {
@@ -239,10 +239,15 @@ export default function ContactSection() {
                 {/* Budget Range */}
                 <div className="space-y-2">
                   <label className="text-[11px] font-mono uppercase tracking-wider text-neutral-600 block font-medium">
-                    PROJECT BUDGET RANGE
+                    PROJECT BUDGET / PACKAGE
                   </label>
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                    {["$1,500 - $3,000", "$3,000 - $5,000", "$5,000 - $10,000", "$10,000+"].map((b) => (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+                    {[
+                      "1 Video Ad (₹2,500)",
+                      "10 Video Ads (₹20,000)",
+                      "₹35,000 - ₹50,000",
+                      "Custom Retainer / Bulk",
+                    ].map((b) => (
                       <button
                         type="button"
                         key={b}

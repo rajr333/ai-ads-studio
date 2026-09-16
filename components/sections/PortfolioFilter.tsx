@@ -17,7 +17,6 @@ const CATEGORIES = [
   "JEWELLERY",
   "SHOES",
   "AI UGC",
-  "LUXURY",
   "COMMERCIALS",
 ];
 
@@ -26,18 +25,39 @@ export default function PortfolioFilter({ projects }: PortfolioFilterProps) {
 
   const filtered = projects.filter((project) => {
     if (selectedCategory === "ALL") return true;
-    if (selectedCategory === "AI UGC") {
+    const cat = selectedCategory.toUpperCase().trim();
+    const ind = (project.industry || "").toUpperCase().trim();
+    const srv = (project.service || "").toUpperCase().trim();
+    const prjCat = (project.category || "").toUpperCase().trim();
+
+    if (cat === "AI UGC") {
       return (
-        project.service === "AI UGC" ||
-        (project.industry as string) === "AI UGC" ||
-        project.industry === "SOCIAL ADS" ||
-        (project.category && project.category.includes("UGC"))
+        ind === "AI UGC" ||
+        srv.includes("UGC") ||
+        prjCat.includes("UGC") ||
+        ind === "SOCIAL ADS"
       );
     }
-    if (selectedCategory === "COMMERCIALS") {
-      return project.service === "Product Commercials" || project.service === "AI Video Ads";
+    if (cat === "COMMERCIALS") {
+      return (
+        srv.includes("COMMERCIAL") ||
+        prjCat.includes("COMMERCIAL") ||
+        srv === "PRODUCT COMMERCIALS" ||
+        ind === "PRODUCT FILMS" ||
+        ind === "LUXURY" ||
+        ind === "TECH"
+      );
     }
-    return (project.industry as string) === selectedCategory;
+    if (cat === "FASHION") {
+      return ind === "FASHION" || prjCat.includes("FASHION") || prjCat.includes("APPAREL");
+    }
+    if (cat === "JEWELLERY") {
+      return ind === "JEWELLERY" || prjCat.includes("JEWELLERY") || prjCat.includes("JEWEL");
+    }
+    if (cat === "SHOES") {
+      return ind === "SHOES" || prjCat.includes("SHOES") || prjCat.includes("FOOTWEAR") || prjCat.includes("SNEAKER");
+    }
+    return ind === cat || prjCat.includes(cat) || srv.includes(cat);
   });
 
   return (
@@ -110,7 +130,7 @@ export default function PortfolioFilter({ projects }: PortfolioFilterProps) {
                   >
                     <video
                       src={project.videoUrl}
-                      poster={project.videoUrl.replace(/\.mp4$/i, ".jpg")}
+                      poster={project.thumbnailUrl || project.videoUrl.replace(/\.mp4$/i, ".jpg")}
                       preload="metadata"
                       autoPlay
                       loop

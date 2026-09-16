@@ -27,6 +27,7 @@ export default function Navbar() {
     { name: "WORK", href: "/#work" },
     { name: "SERVICES", href: "/#services" },
     { name: "WHY ME", href: "/#whyme" },
+    { name: "PRICING", href: "/#pricing" },
     { name: "PROCESS", href: "/#process" },
     { name: "ABOUT", href: "/#about" },
     { name: "CONTACT", href: "/#contact" },

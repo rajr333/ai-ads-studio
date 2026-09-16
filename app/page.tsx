@@ -6,6 +6,7 @@ import IndustrySection from "@/components/sections/IndustrySection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import WhyUsSection from "@/components/sections/WhyUsSection";
+import PricingSection from "@/components/sections/PricingSection";
 import ContactSection from "@/components/sections/ContactSection";
 import { getProjects } from "@/lib/storage";
 
@@ -38,7 +39,10 @@ export default function Home() {
       {/* 08: Why Work With Me: Structural Creative Advantages */}
       <WhyUsSection />
 
-      {/* 09: Commission a Campaign / Contact Section */}
+      {/* 09: Transparent High-ROI Pricing */}
+      <PricingSection />
+
+      {/* 10: Commission a Campaign / Contact Section */}
       <ContactSection />
     </div>
   );

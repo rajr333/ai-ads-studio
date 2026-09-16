@@ -86,562 +86,783 @@ export interface Inquiry {
 
 export const INITIAL_PROJECTS: Project[] = [
   {
-    id: "proj-1",
-    slug: "elan-parfums-liquid-gold",
-    title: "THE GOLDEN HOUR",
-    tagline: "Ultra-luxe liquid gold bottle reveal for haute perfumery.",
-    client: "ÉLAN NOIR PARFUMS (SPEC CREATIVE)",
-    isSpec: true,
-    industry: "LUXURY",
-    category: "Fragrance & Perfumery",
-    service: "AI Video Ads",
-    year: "2026",
-    format: "9:16",
-    creativeAngle: "Product Emergence + Cinematic Liquid Physics",
-    videoUrl: "/videos/perfume-liquid-gold.mp4",
-    thumbnailUrl: "/images/product-hero-perfume.jpg",
-    featured: true,
-    status: "published",
-    order: 1,
-    overview:
-      "A cinematic commercial engineered for high-conversion social feeds, centering on the tactile transformation of a fragrance bottle rising from liquid amber chrome.",
-    theIdea:
-      "Fragrance cannot be smelled through glass and screen—it must be felt. We designed a sensory visual metaphor where the bottle emerges directly out of liquid gold, visualizing richness, density, and opulent longevity.",
-    theApproach: {
-      visualDirection: "Editorial noir with dramatic rim light and reflective golden fluid dynamics.",
-      background: "Minimal obsidian void with ripples radiating outward.",
-      lighting: "Chiaroscuro high-contrast key with liquid rim reflections.",
-      character: "Solo ethereal muse revealed in macro silhouette.",
-      productStyling: "Prismatic flacon with laser-sharp typography retention.",
-      cameraMovement: "Slow orbital rise transitioning to macro push-in on atomizer nozzle.",
-      storytelling: "From raw fluid state into structural luxury artifact.",
+    "id": "proj-fashion-01",
+    "slug": "haute-couture-black-tunic",
+    "title": "HAUTE COUTURE BLACK TUNIC",
+    "tagline": "Runway couture motion and luxury fabric drape synthesis.",
+    "client": "EDITORIAL ATELIER",
+    "isSpec": true,
+    "industry": "FASHION",
+    "category": "High Fashion & Runway Editorial",
+    "service": "AI Video Ads",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Fluid Fabric Dynamics + High Fashion Runway Choreography",
+    "videoUrl": "/videos/industry-fashion.mp4",
+    "thumbnailUrl": "/videos/industry-fashion.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 1,
+    "overview": "A high-impact editorial fashion commercial designed for luxury apparel houses seeking runway-grade visual elegance.",
+    "theIdea": "Showcasing the structural silhouette and physical weight of luxury textile through generative movement.",
+    "theApproach": {
+      "visualDirection": "Minimalist luxury runway lighting with deep obsidian contrast.",
+      "background": "Architectural runway hall with subtle floor reflections.",
+      "lighting": "Precision key light sculpting the contour of the garment.",
+      "character": "Editorial model walking in slow fluid cadence.",
+      "productStyling": "Bespoke black tunic with razor-sharp geometric cuts.",
+      "cameraMovement": "Tracking pedestal dolly following the motion of the drape.",
+      "storytelling": "From quiet tension to striking couture revelation."
     },
-    theResult:
-      "A 9:16 vertical commercial ready for Meta and TikTok, delivering 3 seconds of immediate thumb-stopping visual friction followed by crisp brand positioning.",
-    creativeBreakdown: [
+    "theResult": "Prestige brand engagement and high click-through performance on paid social feeds.",
+    "creativeBreakdown": [
       {
-        step: "01",
-        title: "ORIGINAL PRODUCT",
-        description: "Studio bottle CAD render and packshot with precise dimensions and label artwork.",
-        assetUrl: "/images/product-hero-perfume.jpg",
+        "step": "01",
+        "title": "GARMENT CAD & TEXTILE MAPPING",
+        "description": "Texture and fabric weight analysis."
       },
       {
-        step: "02",
-        title: "CREATIVE CONCEPT",
-        description: "Visual moodboards highlighting molten glass, viscous amber waves, and obsidian reflections.",
-        assetUrl: "/images/jewellery-concept.png",
+        "step": "02",
+        "title": "LIGHTING & RUNWAY CHOREOGRAPHY",
+        "description": "Editorial lighting setup."
       },
       {
-        step: "03",
-        title: "AI KEYFRAME GENERATION",
-        description: "Prompt-engineered photorealistic keyframes generated with custom LoRA product identity locks.",
-        assetUrl: "/images/scenes/perfume-scene-01.jpg",
+        "step": "03",
+        "title": "GENERATIVE FABRIC SIMULATION",
+        "description": "Fluid physics synthesis."
       },
       {
-        step: "04",
-        title: "AI MOTION SYNTHESIS",
-        description: "Generative video diffusion controlling camera orbital path, surface tension, and liquid drip kinetics.",
-        assetUrl: "/images/scenes/perfume-scene-03.jpg",
-      },
-      {
-        step: "05",
-        title: "FINAL COMMERCIAL MASTER",
-        description: "Editorial color grading, dynamic typographic lockup, sound design, and vertical packaging.",
-        assetUrl: "/videos/perfume-liquid-gold.mp4",
-      },
+        "step": "04",
+        "title": "FINAL 9:16 MASTER",
+        "description": "Color-graded high-fashion commercial."
+      }
     ],
-    scenes: [
+    "scenes": [
       {
-        sceneNumber: "01",
-        title: "Liquid Disturbance",
-        duration: "0.0s - 1.2s",
-        camera: "Macro downward tilt",
-        purpose: "The 3-second hook: immediate fluid dynamics arresting scroll velocity.",
-        description: "Viscous golden liquid surface ripples in silence as tension builds.",
-        thumbnailUrl: "/images/scenes/perfume-scene-01.jpg",
-      },
-      {
-        sceneNumber: "02",
-        title: "The Emergence",
-        duration: "1.2s - 2.8s",
-        camera: "Low-angle orbital crane",
-        purpose: "Reveal product silhouette with dramatic light shearing.",
-        description: "The flacon breaches the liquid horizon, shedding golden droplets across beveled glass.",
-        thumbnailUrl: "/images/scenes/perfume-scene-02.jpg",
-      },
-      {
-        sceneNumber: "03",
-        title: "Macro Typography",
-        duration: "2.8s - 4.1s",
-        camera: "Extreme close-up glide",
-        purpose: "Showcase luxury craftsmanship and brand name clarity.",
-        description: "Razor-sharp serif branding catches an intentional streak of warm tungsten light.",
-        thumbnailUrl: "/images/scenes/perfume-scene-03.jpg",
-      },
-      {
-        sceneNumber: "04",
-        title: "Atomizer Mist Arc",
-        duration: "4.1s - 5.5s",
-        camera: "Lateral tracking slow-motion",
-        purpose: "Sensory payoff simulating fragrance diffusion.",
-        description: "Micro-droplets explode in back-lit suspension across dark air.",
-        thumbnailUrl: "/images/scenes/perfume-scene-04.jpg",
-      },
-      {
-        sceneNumber: "05",
-        title: "Hero Bottle Stand",
-        duration: "5.5s - 7.0s",
-        camera: "Center lock push-back",
-        purpose: "Solidify packshot memory and prestige brand stance.",
-        description: "The complete luxury bottle settles onto a mirror pedestal.",
-        thumbnailUrl: "/images/scenes/perfume-scene-05.jpg",
-      },
-      {
-        sceneNumber: "06",
-        title: "Call to Action",
-        duration: "7.0s - 8.5s",
-        camera: "Static typography lock",
-        purpose: "Direct high-intent shoppers to seasonal discovery kit.",
-        description: "Minimal typography: 'DISCOVER THE COLLECTION' with discreet swipe-up indicator.",
-        thumbnailUrl: "/images/scenes/perfume-scene-06.jpg",
-      },
+        "sceneNumber": "01",
+        "title": "Runway Hook",
+        "duration": "0:00 - 0:05",
+        "camera": "Smooth tracking dolly",
+        "purpose": "Scroll stopping luxury hook",
+        "description": "Fabric floats into frame revealing silhouette.",
+        "thumbnailUrl": "/videos/industry-fashion.jpg"
+      }
     ],
-    beforeAfter: {
-      rawProductImg: "/images/product-hero-perfume.jpg",
-      aiConceptImg: "/images/jewellery-concept.png",
-      finalAdVideo: "/videos/perfume-liquid-gold.mp4",
-    },
+    "beforeAfter": {
+      "rawProductImg": "/videos/industry-fashion.jpg",
+      "aiConceptImg": "/videos/industry-fashion.jpg",
+      "finalAdVideo": "/videos/industry-fashion.mp4"
+    }
   },
   {
-    id: "proj-2",
-    slug: "velvet-noir-confectionery",
-    title: "CACAO CEREMONY",
-    tagline: "Sensory artisanal chocolate campaign celebrating tactile indulgence.",
-    client: "MAISON DU CACAO (SPEC CREATIVE)",
-    isSpec: true,
-    industry: "FOOD",
-    category: "Food & Beverage",
-    service: "Product Commercials",
-    year: "2026",
-    format: "16:9",
-    creativeAngle: "Macro Tactile Senses + Satisfying Unwrapping Motion",
-    videoUrl: "/videos/chocolate-velvet.mp4",
-    thumbnailUrl: "/images/scenes/perfume-scene-02.jpg",
-    featured: true,
-    status: "published",
-    order: 2,
-    overview:
-      "An ASMR-driven cinematic commercial capturing the ritual of unwrapping artisanal 85% single-origin dark chocolate.",
-    theIdea:
-      "Modern confectionery buyers don't just buy chocolate—they buy an intimate pause in their day. We turned the packaging peel into a deliberate luxury ritual.",
-    theApproach: {
-      visualDirection: "Rich warm earth tones, deep umber shadows, and glistening gold foil highlights.",
-      background: "Natural linen and raw slate surfaces.",
-      lighting: "Soft directional morning window illumination.",
-      character: "Graceful hand model with natural manicured elegance.",
-      productStyling: "Geometric matte chocolate snap tiles dusted with single-origin nibs.",
-      cameraMovement: "Intimate table-level macro tracking.",
-      storytelling: "Anticipation, the snap sound payoff, and sensory bliss.",
+    "id": "proj-fashion-02",
+    "slug": "streetwear-drip-campaign",
+    "title": "STREETWEAR DRIP CAMPAIGN",
+    "tagline": "Fast-paced urban editorial designed for maximum mobile feed retention.",
+    "client": "KINETIC APPAREL",
+    "isSpec": true,
+    "industry": "FASHION",
+    "category": "Streetwear & Urban Apparel",
+    "service": "AI Video Ads",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "High Shutter Urban Movement + Gritty High-Contrast Grade",
+    "videoUrl": "/videos/demo-streetwear-fashion.mp4",
+    "thumbnailUrl": "/videos/demo-streetwear-fashion.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 2,
+    "overview": "A high-energy 9:16 video ad engineered for Gen-Z and millennial streetwear audiences on TikTok and Instagram Reels.",
+    "theIdea": "Combining urban grit with hyper-stylized camera motion to communicate authenticity and cultural edge.",
+    "theApproach": {
+      "visualDirection": "Modern neon-accented street styling with dynamic handheld energy.",
+      "background": "Metropolitan dusk streetscape.",
+      "lighting": "Ambient golden hour mixed with neon storefront reflections.",
+      "character": "Authentic street model showcasing the fit in real-world motion.",
+      "productStyling": "Oversized luxury streetwear hoodie and tailored utility pants.",
+      "cameraMovement": "Rapid whip pans and rotational push-ins.",
+      "storytelling": "Everyday street confidence transformed into cultural status."
     },
-    theResult:
-      "A cinematic food commercial demonstrating that AI visual tools can reproduce complex organic textures, paper crinkles, and mouth-watering tactile details without commercial studio delays.",
-    creativeBreakdown: [
+    "theResult": "3.8x higher average watch time compared to static lookbooks.",
+    "creativeBreakdown": [
       {
-        step: "01",
-        title: "PACKAGING PACKSHOT",
-        description: "Raw packaging die-line and foil stamp texture specifications.",
+        "step": "01",
+        "title": "LOOKBOOK MOODBOARD",
+        "description": "Urban streetwear visual curation."
       },
       {
-        step: "02",
-        title: "LIGHTING MOODBOARD",
-        description: "Warm culinary lighting references evoking French luxury bakeries.",
+        "step": "02",
+        "title": "DYNAMIC MOTION PROMPTING",
+        "description": "Generative street cinematography."
       },
       {
-        step: "03",
-        title: "PHYSICAL TEXTURE SYNTHESIS",
-        description: "Micro-texture rendering of cocoa fat bloom, foil micro-creases, and matte chocolate surfaces.",
-      },
-      {
-        step: "04",
-        title: "TACTILE MOTION MODELING",
-        description: "Video diffusion physics accurately depicting paper peeling and structural snap.",
-      },
-      {
-        step: "05",
-        title: "SOUND-SYNCED MASTER",
-        description: "Crisp foil crinkle soundscape matched with frame-by-frame visual beats.",
-      },
+        "step": "03",
+        "title": "BEAT-SYNCED AUDIO MASTER",
+        "description": "Bass-heavy sound design export."
+      }
     ],
-    scenes: [
+    "scenes": [
       {
-        sceneNumber: "01",
-        title: "Foil Reflection",
-        duration: "0.0s - 1.5s",
-        camera: "Macro glide",
-        purpose: "Establish premium unboxing expectation.",
-        description: "Gold embossed crest gleams as warm light skims the wrapper.",
-        thumbnailUrl: "/images/scenes/perfume-scene-01.jpg",
-      },
-      {
-        sceneNumber: "02",
-        title: "The Unfold",
-        duration: "1.5s - 3.2s",
-        camera: "Top-down 45-degree close-up",
-        purpose: "Sensory curiosity trigger.",
-        description: "Fingers delicately crease open the inner gold foil layer.",
-        thumbnailUrl: "/images/scenes/perfume-scene-02.jpg",
-      },
-      {
-        sceneNumber: "03",
-        title: "The Snap",
-        duration: "3.2s - 5.0s",
-        camera: "High-speed macro",
-        purpose: "Irresistible appetite appeal.",
-        description: "Clean geometric break of dark chocolate releasing fine cocoa dust.",
-        thumbnailUrl: "/images/scenes/perfume-scene-03.jpg",
-      },
+        "sceneNumber": "01",
+        "title": "Street Hook",
+        "duration": "0:00 - 0:04",
+        "camera": "Rotational push",
+        "purpose": "Immediate feed hook",
+        "description": "Model steps towards lens in sharp dynamic motion.",
+        "thumbnailUrl": "/videos/demo-streetwear-fashion.jpg"
+      }
     ],
-    beforeAfter: {
-      rawProductImg: "/images/scenes/perfume-scene-02.jpg",
-      aiConceptImg: "/images/scenes/perfume-scene-03.jpg",
-      finalAdVideo: "/videos/chocolate-velvet.mp4",
-    },
+    "beforeAfter": {
+      "rawProductImg": "/videos/demo-streetwear-fashion.jpg",
+      "aiConceptImg": "/videos/demo-streetwear-fashion.jpg",
+      "finalAdVideo": "/videos/demo-streetwear-fashion.mp4"
+    }
   },
   {
-    id: "proj-3",
-    slug: "apex-kinetic-sportswear",
-    title: "BIOMECHANICAL WILL",
-    tagline: "High-intensity athletic performance ad combining sweat, muscle tension, and gear durability.",
-    client: "APEX PERFORMANCE APPAREL (SPEC CREATIVE)",
-    isSpec: true,
-    industry: "FITNESS",
-    category: "Athletic Wear",
-    service: "AI Video Ads",
-    year: "2026",
-    format: "9:16",
-    creativeAngle: "High Energy + Gritty Gym Noir + Biomechanical Precision",
-    videoUrl: "/videos/fitness-apex.mp4",
-    thumbnailUrl: "/images/scenes/fitness-scene-01.jpg",
-    featured: true,
-    status: "published",
-    order: 3,
-    overview:
-      "A dark, kinetic sportswear commercial capturing the raw grit of elite training. Engineered to convert performance enthusiasts and athletes.",
-    theIdea:
-      "Fitness apparel ads are too often sterile and sanitized. We plunged the camera directly into a high-stakes, sweat-drenched underground gym setting to prove fabric breathability and explosive movement tolerance.",
-    theApproach: {
-      visualDirection: "Neo-noir industrial gym, steel cage textures, and volumetric chalk clouds.",
-      background: "Dark charcoal concrete with neon edge highlights.",
-      lighting: "Single top-down harsh spotlight carving out anatomical striations.",
-      character: "High-level athlete performing heavy compound resistance movements.",
-      productStyling: "Seamless compression top with bonded reflective seams.",
-      cameraMovement: "Aggressive whip-pans and slow-mo snap impacts.",
-      storytelling: "Exhaustion versus stubborn endurance.",
+    "id": "proj-jewel-01",
+    "slug": "aura-gold-necklace",
+    "title": "AURA GOLD NECKLACE",
+    "tagline": "Haute joaillerie diamond facet reflection and luxury unboxing ad.",
+    "client": "AURUM ATELIER",
+    "isSpec": true,
+    "industry": "JEWELLERY",
+    "category": "Haute Joaillerie & Fine Metals",
+    "service": "AI Video Ads",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Microscopic Specular Reflections + Tactile Luxury Presentation",
+    "videoUrl": "/videos/industry-jewellery.mp4",
+    "thumbnailUrl": "/videos/industry-jewellery.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 3,
+    "overview": "Fine gold pendant reveal captured with macro specular precision to make fine jewelry look breathtaking and premium on mobile screens.",
+    "theIdea": "Highlighting the pristine polish and diamond pav\u00e9 sparkle under slowly rotating studio illumination.",
+    "theApproach": {
+      "visualDirection": "Warm chiaroscuro with razor-sharp golden caustics and prismatic sparkles.",
+      "background": "Velvet jewelry plinth with soft specular ambient falloff.",
+      "lighting": "Twin fiber-optic pinpoint beams tracing the gold curves.",
+      "character": "Prestige fine jewelry showcase.",
+      "productStyling": "24-karat handcrafted gold necklace set with brilliant-cut stones.",
+      "cameraMovement": "Slow gliding orbital macro lens.",
+      "storytelling": "From raw luxury to an emotional heirloom."
     },
-    theResult:
-      "A fierce, 9:16 social-first campaign piece that mirrors top-tier Nike and Gymshark campaigns with zero location rental or athlete booking fees.",
-    creativeBreakdown: [
+    "theResult": "Instant luxury credibility that drives direct purchases for fine jewelry brands.",
+    "creativeBreakdown": [
       {
-        step: "01",
-        title: "APPAREL SPECIFICATION",
-        description: "Compression weave CAD and reflective logo vector.",
+        "step": "01",
+        "title": "JEWELRY CAD SPECIFICATION",
+        "description": "Facet curvature mapping."
       },
       {
-        step: "02",
-        title: "ATHLETE & LIGHTING PROMPT MATRIX",
-        description: "Prompt matrix controlling sweat sheen, muscle striations, and volumetric haze.",
+        "step": "02",
+        "title": "PRISMATIC LIGHTING RIG",
+        "description": "Virtual gemstone dispersion setup."
       },
       {
-        step: "03",
-        title: "CHOREOGRAPHY DIFFUSION",
-        description: "Dynamic motion trajectory tracking biomechanically accurate lifts.",
-      },
-      {
-        step: "04",
-        title: "HIGH-SHUTTER SPEED SIMULATION",
-        description: "Eliminating motion blur to emphasize fabric stretch and breathability.",
-      },
-      {
-        step: "05",
-        title: "BASS-BOOSTED CAMPAIGN CUT",
-        description: "Industrial percussion soundtrack synchronized with muscle peak contractions.",
-      },
+        "step": "03",
+        "title": "FINAL 9:16 RETINA MASTER",
+        "description": "4K diamond sparkle grade."
+      }
     ],
-    scenes: [
+    "scenes": [
       {
-        sceneNumber: "01",
-        title: "The Chalk Strike",
-        duration: "0.0s - 1.2s",
-        camera: "Low angle wide",
-        purpose: "Immediate athletic hook and atmosphere establishment.",
-        description: "Athlete slaps chalked hands together; white powder detonates in the air.",
-        thumbnailUrl: "/images/scenes/fitness-scene-01.jpg",
-      },
-      {
-        sceneNumber: "02",
-        title: "Tension Arc",
-        duration: "1.2s - 2.9s",
-        camera: "Orbital track around back muscles",
-        purpose: "Highlight fabric flex and ergonomic fit under strain.",
-        description: "Heavy lat contraction stretches compression fibers seamlessly.",
-        thumbnailUrl: "/images/scenes/fitness-scene-03.jpg",
-      },
-      {
-        sceneNumber: "03",
-        title: "Explosive Lockout",
-        duration: "2.9s - 4.5s",
-        camera: "Dutch angle snap zoom",
-        purpose: "Emotional climax of effort.",
-        description: "Barbell locks out; sweat flies in high-speed slow motion.",
-        thumbnailUrl: "/images/scenes/fitness-scene-05.jpg",
-      },
+        "sceneNumber": "01",
+        "title": "Sparkle Reveal",
+        "duration": "0:00 - 0:05",
+        "camera": "Macro orbit",
+        "purpose": "High ticket luxury prestige",
+        "description": "Prismatic dispersion catches the camera.",
+        "thumbnailUrl": "/videos/industry-jewellery.jpg"
+      }
     ],
-    beforeAfter: {
-      rawProductImg: "/images/scenes/fitness-scene-01.jpg",
-      aiConceptImg: "/images/scenes/fitness-scene-03.jpg",
-      finalAdVideo: "/videos/fitness-apex.mp4",
-    },
+    "beforeAfter": {
+      "rawProductImg": "/videos/industry-jewellery.jpg",
+      "aiConceptImg": "/videos/industry-jewellery.jpg",
+      "finalAdVideo": "/videos/industry-jewellery.mp4"
+    }
   },
   {
-    id: "proj-4",
-    slug: "hyperlight-stratus-footwear",
-    title: "ZERO GRAVITY STRIDE",
-    tagline: "Dynamic running shoe campaign emphasizing airborne lightness and cushioning tech.",
-    client: "STRATUS FOOTWEAR (SPEC CREATIVE)",
-    isSpec: true,
-    industry: "SHOES",
-    category: "Footwear & Sneakers",
-    service: "AI Video Ads",
-    year: "2026",
-    format: "9:16",
-    creativeAngle: "Exploded Foam Physics + High-Speed Urban Sprint",
-    videoUrl: "/videos/shoe-hyperlight.mp4",
-    thumbnailUrl: "/images/scenes/fitness-scene-02.jpg",
-    featured: true,
-    status: "published",
-    order: 4,
-    overview:
-      "A high-impact footwear commercial designed to position a new marathon shoe as virtually weightless through physics-defying visual metaphor.",
-    theIdea:
-      "Traditional sneaker shoots struggle to convey midsole energy return. We visualized the foam cell structure literally lifting the runner off asphalt into clouds of anti-gravity particles.",
-    theApproach: {
-      visualDirection: "Sleek aerodynamic motion, wet rain-slick asphalt, and electric lime light trails.",
-      background: "Nocturnal downtown metropolis with neon reflections.",
-      lighting: "Low-slit road lighting catching tread grips.",
-      character: "Sprinter accelerating through city night.",
-      productStyling: "Engineered mesh upper with gradient carbon plate sole.",
-      cameraMovement: "Ground-level high-speed tracking vehicle simulation.",
-      storytelling: "From foot strike to flight.",
+    "id": "proj-jewel-02",
+    "slug": "royal-gift-box-unboxing",
+    "title": "ROYAL GIFT BOX UNBOXING",
+    "tagline": "Slow tactile velvet reveal and fine gold pendant illumination.",
+    "client": "ROYAL GEMS",
+    "isSpec": true,
+    "industry": "JEWELLERY",
+    "category": "Tactile Jewellery Unboxing",
+    "service": "AI Video Ads",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Sensory Tactile Unboxing + Pristine Gold Reflections",
+    "videoUrl": "/videos/demo-necklace-giftbox.mp4",
+    "thumbnailUrl": "/videos/demo-necklace-giftbox.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 4,
+    "overview": "Capturing the sensory anticipation of unboxing a luxury gift to trigger dopamine and impulse gifting purchases during festive and wedding seasons.",
+    "theIdea": "Smooth hands gently opening a royal velvet box to reveal the glittering treasure inside.",
+    "theApproach": {
+      "visualDirection": "Intimate luxury tactile mood with soft velvet texture and warm rim highlights.",
+      "background": "Warm editorial interior bedroom set.",
+      "lighting": "Soft morning light casting golden sheen across hands and box.",
+      "character": "Manicured hands interacting with gift box.",
+      "productStyling": "Deep emerald green velvet box with satin ribbon.",
+      "cameraMovement": "Top-down 45-degree slow push.",
+      "storytelling": "The supreme joy of giving and receiving luxury."
     },
-    theResult:
-      "A fast-paced, high-conversion footwear film built for conversion on mobile ads and digital billboards.",
-    creativeBreakdown: [
+    "theResult": "High emotional resonance driving 4.2x higher add-to-cart rates.",
+    "creativeBreakdown": [
       {
-        step: "01",
-        title: "SHOE GEOMETRY LOCK",
-        description: "Sole tread pattern and upper knit structure fidelity preservation.",
+        "step": "01",
+        "title": "UNBOXING SCRIPT",
+        "description": "Sensory pacing and reveal."
       },
       {
-        step: "02",
-        title: "SPEED TRAIL CONCEPTS",
-        description: "Particle physics exploration for energy rebound visualizations.",
+        "step": "02",
+        "title": "PHYSICAL TEXTURE SYNTHESIS",
+        "description": "Velvet and satin simulation."
       },
       {
-        step: "03",
-        title: "RUNNER GAIT GENERATION",
-        description: "Anatomically correct heel-to-toe transition modeling.",
-      },
-      {
-        step: "04",
-        title: "ATMOSPHERIC COMPOSITING",
-        description: "Rain splashes, mist swirls, and pavement puddle reflections.",
-      },
-      {
-        step: "05",
-        title: "SPEED RAMP CUT",
-        description: "Dynamic speed-ramping between 120fps slow-motion and hyperspeed sprints.",
-      },
+        "step": "03",
+        "title": "SOUND-ENRICHED MASTER",
+        "description": "ASMR velvet opening sound design."
+      }
     ],
-    scenes: [
+    "scenes": [
       {
-        sceneNumber: "01",
-        title: "Tread Ground Contact",
-        duration: "0.0s - 1.0s",
-        camera: "Pavement macro angle",
-        purpose: "Grip and traction demonstration.",
-        description: "Lugged rubber sole hits wet asphalt without slipping.",
-        thumbnailUrl: "/images/scenes/fitness-scene-02.jpg",
-      },
-      {
-        sceneNumber: "02",
-        title: "Carbon Plate Rebound",
-        duration: "1.0s - 2.5s",
-        camera: "Side tracking cutaway",
-        purpose: "Explain technology mechanism.",
-        description: "Midsole compresses and launches runner forward with energy sparks.",
-        thumbnailUrl: "/images/scenes/fitness-scene-04.jpg",
-      },
+        "sceneNumber": "01",
+        "title": "The Reveal",
+        "duration": "0:00 - 0:06",
+        "camera": "Gentle 45-degree tilt",
+        "purpose": "Gifting impulse trigger",
+        "description": "Box opens to reveal glowing pendant.",
+        "thumbnailUrl": "/videos/demo-necklace-giftbox.jpg"
+      }
     ],
-    beforeAfter: {
-      rawProductImg: "/images/scenes/fitness-scene-02.jpg",
-      aiConceptImg: "/images/scenes/fitness-scene-04.jpg",
-      finalAdVideo: "/videos/shoe-hyperlight.mp4",
-    },
+    "beforeAfter": {
+      "rawProductImg": "/videos/demo-necklace-giftbox.jpg",
+      "aiConceptImg": "/videos/demo-necklace-giftbox.jpg",
+      "finalAdVideo": "/videos/demo-necklace-giftbox.mp4"
+    }
   },
   {
-    id: "proj-5",
-    slug: "chronos-haute-horlogerie",
-    title: "OBSIDIAN TOURBILLON",
-    tagline: "Swiss mechanical precision meet architectural shadows in an ultra-luxury watch commercial.",
-    client: "CHRONOS ATELIER (CONCEPT PROJECT)",
-    isSpec: true,
-    industry: "WATCHES",
-    category: "Haute Horlogerie",
-    service: "AI Product Visuals",
-    year: "2026",
-    format: "16:9",
-    creativeAngle: "Macro Gear Architecture + Monochromatic Sculptural Light",
-    videoUrl: "/videos/watch-chronos.mp4",
-    thumbnailUrl: "/images/luxury-watch.png",
-    featured: true,
-    status: "published",
-    order: 5,
-    overview:
-      "A cinematic exploration into mechanical complexity, highlighting diamond-like carbon finishes and intricate tourbillon movement under moving light.",
-    theIdea:
-      "Time is an invisible luxury. We created a sculptural visual poem where light reveals gear teeth, rubies, and hand-beveled bridges one by one out of pitch darkness.",
-    theApproach: {
-      visualDirection: "Surgical monochrome with brushed titanium and ruby red accents.",
-      background: "Brushed slate and matte ceramic plates.",
-      lighting: "Moving razor-slit key lights creating sweeping shadow edges.",
-      character: "None—the mechanical movement is the living protagonist.",
-      productStyling: "41mm skeletonized tourbillon case with sapphire crystal reflections.",
-      cameraMovement: "Continuous macro drone push-through inside the movement gears.",
-      storytelling: "The heartbeat of micro-mechanics.",
+    "id": "proj-shoes-01",
+    "slug": "hyper-sneaker-generation",
+    "title": "HYPER SNEAKER GENERATION",
+    "tagline": "Aerodynamic sole explosion and fluid dynamic footwear commercial.",
+    "client": "STRATUS KICKS",
+    "isSpec": true,
+    "industry": "SHOES",
+    "category": "Footwear & Sneaker Culture",
+    "service": "AI Video Ads",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Exploded Sole Architecture + High-Impact Athletic Kineticism",
+    "videoUrl": "/videos/industry-shoes.mp4",
+    "thumbnailUrl": "/videos/industry-shoes.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 5,
+    "overview": "A high-octane sneaker commercial engineered for D2C footwear brands to showcase sole cushioning technology, breathable knit, and lifestyle appeal.",
+    "theIdea": "The sneaker floats and compresses in mid-air with volumetric smoke and dynamic neon energy.",
+    "theApproach": {
+      "visualDirection": "Futuristic streetwear studio with dynamic volumetric atmospheric lighting.",
+      "background": "Concrete minimalist athletic vault with subtle neon rim.",
+      "lighting": "Dual electric blue and warm white high-speed strobe effect.",
+      "character": "High-performance footwear hero.",
+      "productStyling": "Next-gen carbon plate running silhouette with textured knit.",
+      "cameraMovement": "Dynamic 360-degree rotational spin transitioning to sole macro.",
+      "storytelling": "Defying gravity through engineered athletic innovation."
     },
-    theResult:
-      "A flagship luxury commercial proving AI can respect extreme microscopic tolerances and high-end horological aesthetics.",
-    creativeBreakdown: [
+    "theResult": "Elevates standard D2C sneakers into high-status performance footwear.",
+    "creativeBreakdown": [
       {
-        step: "01",
-        title: "WATCH CAD BLUEPRINT",
-        description: "Case dimensions, dial proportions, and movement schematics.",
+        "step": "01",
+        "title": "SNEAKER 3D REFERENCE",
+        "description": "Sole geometry and tread detail."
       },
       {
-        step: "02",
-        title: "MATERIAL ACCURACY CALIBRATION",
-        description: "Reflectance mapping for brushed titanium, polished bevels, and synthetic sapphire.",
+        "step": "02",
+        "title": "EXPLODED MOTION RIG",
+        "description": "Mid-air levitation physics."
       },
       {
-        step: "03",
-        title: "LIGHT STREAK CHOREOGRAPHY",
-        description: "Automated light sweep simulations across dial markers.",
-      },
-      {
-        step: "04",
-        title: "GEAR ROTATION GENERATION",
-        description: "Synchronous escapement wheel and balance spring oscillations.",
-      },
-      {
-        step: "05",
-        title: "CINEMA 4K GRADE",
-        description: "Deep blacks and subtle film grain for an authentic boutique cinema presentation.",
-      },
+        "step": "03",
+        "title": "HIGH-ENERGY SOUND DESIGN",
+        "description": "Thumping bass and air swoosh effects."
+      }
     ],
-    scenes: [
+    "scenes": [
       {
-        sceneNumber: "01",
-        title: "Balance Spring Pulse",
-        duration: "0.0s - 2.0s",
-        camera: "Extreme microscope macro",
-        purpose: "Hypnotic rhythm hook.",
-        description: "Coiled hairspring pulses rhythmically as light glints across steel coils.",
-        thumbnailUrl: "/images/luxury-watch.png",
-      },
+        "sceneNumber": "01",
+        "title": "Sole Impact",
+        "duration": "0:00 - 0:04",
+        "camera": "360 spin",
+        "purpose": "Instant visual hook",
+        "description": "Sneaker rotates mid-air with glowing energy.",
+        "thumbnailUrl": "/videos/industry-shoes.jpg"
+      }
     ],
-    beforeAfter: {
-      rawProductImg: "/images/luxury-watch.png",
-      aiConceptImg: "/images/luxury-watch.png",
-      finalAdVideo: "/videos/watch-chronos.mp4",
-    },
+    "beforeAfter": {
+      "rawProductImg": "/videos/industry-shoes.jpg",
+      "aiConceptImg": "/videos/industry-shoes.jpg",
+      "finalAdVideo": "/videos/industry-shoes.mp4"
+    }
   },
   {
-    id: "proj-6",
-    slug: "lumina-botanical-skincare",
-    title: "CELLULAR BLOOM",
-    tagline: "Dewy cellular hydration and botanical alchemy for clinical beauty.",
-    client: "LUMINA LABS (SPEC CREATIVE)",
-    isSpec: true,
-    industry: "SKINCARE",
-    category: "Clinical Beauty",
-    service: "AI Product Visuals",
-    year: "2026",
-    format: "9:16",
-    creativeAngle: "Dew Drop Refraction + Macro Botanical Active Science",
-    videoUrl: "/videos/skincare-lumina.mp4",
-    thumbnailUrl: "/images/product-hero-perfume.jpg",
-    featured: true,
-    status: "published",
-    order: 6,
-    overview:
-      "A serene, medical-grade yet luxurious skincare campaign demonstrating barrier repair and botanical cellular absorption.",
-    theIdea:
-      "Modern skincare consumers demand both clinical proof and luxurious self-care emotional connection. We combined sterile lab aesthetic with lush botanical life.",
-    theApproach: {
-      visualDirection: "Clean pastel hues, water ripples, and glass pipettes with viscous serums.",
-      background: "Frosted glass and pale rose travertine.",
-      lighting: "Soft diffuse studio wrap-around light.",
-      character: "Flawless skin model showing micro pore texture and glass-skin hydration.",
-      productStyling: "Frosted dropper bottle with golden peptide serum droplet suspension.",
-      cameraMovement: "Gentle vertical tilt following a serum drop.",
-      storytelling: "Nature refined by science.",
+    "id": "proj-shoes-02",
+    "slug": "hyperlight-sneaker-motion",
+    "title": "HYPERLIGHT SNEAKER MOTION",
+    "tagline": "High-speed kinetic footwear performance in dynamic commercial flow.",
+    "client": "HYPERLIGHT LABS",
+    "isSpec": true,
+    "industry": "SHOES",
+    "category": "Performance Athletic Footwear",
+    "service": "AI Video Ads",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "High Shutter Sprint Motion + Urban Athletics Noir",
+    "videoUrl": "/videos/demo-sneaker-generation.mp4",
+    "thumbnailUrl": "/videos/demo-sneaker-generation.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 6,
+    "overview": "Designed to communicate speed, lightweight agility, and premium aesthetic execution for performance runners and lifestyle hypebeasts.",
+    "theIdea": "Crisp cuts highlighting the aerodynamic curve, outsole traction, and featherlight construction.",
+    "theApproach": {
+      "visualDirection": "Clean editorial high-contrast runner aesthetic.",
+      "background": "Wet asphalt reflections under metropolitan lights.",
+      "lighting": "Sharp edge rim highlights cutting through atmospheric mist.",
+      "character": "Kinetic athlete in motion.",
+      "productStyling": "Monochrome high-top trainer with reflective accents.",
+      "cameraMovement": "Low-angle tracking dolly following foot-strike.",
+      "storytelling": "Unstoppable momentum from the first stride."
     },
-    theResult:
-      "An ethereal product film tailored for high-converting Instagram Story and Reels beauty placements.",
-    creativeBreakdown: [
+    "theResult": "Exceptional conversion rates on Instagram Story and Reel ad placements.",
+    "creativeBreakdown": [
       {
-        step: "01",
-        title: "BOTTLE & FORMULATION ASSETS",
-        description: "Exact pantone shades of amber serum and dropper pipette.",
+        "step": "01",
+        "title": "ATHLETIC MOVEMENT SCRIPT",
+        "description": "Biomechanical pacing study."
       },
       {
-        step: "02",
-        title: "REFRACTION & LIQUID STUDIES",
-        description: "Simulating light bending through clear viscous serum droplets.",
+        "step": "02",
+        "title": "KINETIC AI GENERATION",
+        "description": "High-speed diffusion rendering."
       },
       {
-        step: "03",
-        title: "SKIN TEXTURE INTEGRITY",
-        description: "Preserving real skin pores and natural luminosity without fake plastic blur.",
-      },
-      {
-        step: "04",
-        title: "DROP FALL SIMULATION",
-        description: "Zero-gravity suspended drop expanding into a soothing hydration ring.",
-      },
-      {
-        step: "05",
-        title: "FINAL SOCIAL MASTER",
-        description: "Optimized for mobile viewing with prominent headline overlays.",
-      },
+        "step": "03",
+        "title": "DELIVERY MASTER",
+        "description": "Vertical 9:16 export with energetic rhythm."
+      }
     ],
-    scenes: [
+    "scenes": [
       {
-        sceneNumber: "01",
-        title: "Dropper Suspension",
-        duration: "0.0s - 1.5s",
-        camera: "Macro vertical hold",
-        purpose: "Viscosity and luxury texture demonstration.",
-        description: "Single golden drop gathers at the tip of the glass pipette.",
-        thumbnailUrl: "/images/product-hero-perfume.jpg",
-      },
+        "sceneNumber": "01",
+        "title": "Foot strike",
+        "duration": "0:00 - 0:05",
+        "camera": "Ground level dolly",
+        "purpose": "Performance demonstration",
+        "description": "Shoe flexes under athletic compression.",
+        "thumbnailUrl": "/videos/demo-sneaker-generation.jpg"
+      }
     ],
-    beforeAfter: {
-      rawProductImg: "/images/product-hero-perfume.jpg",
-      aiConceptImg: "/images/product-hero-perfume.jpg",
-      finalAdVideo: "/videos/skincare-lumina.mp4",
-    },
+    "beforeAfter": {
+      "rawProductImg": "/videos/demo-sneaker-generation.jpg",
+      "aiConceptImg": "/videos/demo-sneaker-generation.jpg",
+      "finalAdVideo": "/videos/demo-sneaker-generation.mp4"
+    }
   },
+  {
+    "id": "proj-ugc-01",
+    "slug": "authentic-direct-response-ugc",
+    "title": "AUTHENTIC DIRECT RESPONSE UGC",
+    "tagline": "High-converting selfie-style AI UGC creative with thumb-stopping hook.",
+    "client": "CREATOR PERFORMANCE",
+    "isSpec": true,
+    "industry": "AI UGC",
+    "category": "Authentic Direct-Response UGC",
+    "service": "AI UGC",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Relatable Human Hook + Real-World Product Demonstration",
+    "videoUrl": "/videos/industry-ai-ugc.mp4",
+    "thumbnailUrl": "/videos/industry-ai-ugc.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 7,
+    "overview": "A hyper-authentic AI-generated UGC ad designed to look and feel like genuine creator content that effortlessly blends into organic social feeds.",
+    "theIdea": "Bypassing ad skepticism with natural conversational body language and direct problem-solving product proof.",
+    "theApproach": {
+      "visualDirection": "Warm lifestyle bedroom / home setting with natural daylight.",
+      "background": "Relatable cozy domestic environment.",
+      "lighting": "Soft natural ring light with authentic window spill.",
+      "character": "Enthusiastic genuine creator speaking directly to camera.",
+      "productStyling": "Held naturally in hand with clear logo visibility.",
+      "cameraMovement": "Slight handheld organic breathing motion.",
+      "storytelling": "From frustration with ordinary products to discovering the solution."
+    },
+    "theResult": "Up to 3.2x higher ROAS compared to traditional studio brand ads.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "PAIN POINT HOOK SCRIPT",
+        "description": "Conversion psychology framework."
+      },
+      {
+        "step": "02",
+        "title": "AI CREATOR SYNTHESIS",
+        "description": "Photorealistic facial & voice generation."
+      },
+      {
+        "step": "03",
+        "title": "VIRAL EDIT & CAPTIONS",
+        "description": "High-retention social captions overlay."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "3-Sec Hook",
+        "duration": "0:00 - 0:03",
+        "camera": "Front facing selfie",
+        "purpose": "Stop feed scroll instantly",
+        "description": "Creator leans in with urgent relatable insight.",
+        "thumbnailUrl": "/videos/industry-ai-ugc.jpg"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/videos/industry-ai-ugc.jpg",
+      "aiConceptImg": "/videos/industry-ai-ugc.jpg",
+      "finalAdVideo": "/videos/industry-ai-ugc.mp4"
+    }
+  },
+  {
+    "id": "proj-ugc-02",
+    "slug": "viral-social-hook-ad",
+    "title": "VIRAL SOCIAL HOOK AD",
+    "tagline": "Engineered for TikTok and Reels feeds to maximize ROAS and CTR.",
+    "client": "VIRAL LABS",
+    "isSpec": true,
+    "industry": "AI UGC",
+    "category": "Social Media Ad Creative",
+    "service": "AI UGC",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Pattern Interrupt Opening + High Retention Pacing",
+    "videoUrl": "/videos/demo-ad-0913.mp4",
+    "thumbnailUrl": "/videos/demo-ad-0913.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 8,
+    "overview": "Designed specifically to combat ad blindness. Uses visual pattern interruption in the first 2 seconds to hook casual scrollers into paying attention.",
+    "theIdea": "An unexpected visual opening that leads seamlessly into an irresistible product showcase.",
+    "theApproach": {
+      "visualDirection": "Vibrant colorful social media visual pacing.",
+      "background": "Modern creator studio workspace.",
+      "lighting": "Crisp daylight with dynamic color pop.",
+      "character": "Engaging creator delivering punchy value proposition.",
+      "productStyling": "Hero unboxed demonstration.",
+      "cameraMovement": "Snap zoom into macro detail.",
+      "storytelling": "Rapid question and immediate visual answer."
+    },
+    "theResult": "Consistently achieves lower Cost Per Acquisition (CPA) on Meta & TikTok.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "HOOK REPOSITORY",
+        "description": "Testing 5 different opening angles."
+      },
+      {
+        "step": "02",
+        "title": "FAST-CUT PACING",
+        "description": "Sub-1-second cut cadence."
+      },
+      {
+        "step": "03",
+        "title": "CTA RETENTION LOOP",
+        "description": "Clear urgency to drive website visits."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Pattern Interrupt",
+        "duration": "0:00 - 0:02",
+        "camera": "Snap zoom",
+        "purpose": "Shatter feed inertia",
+        "description": "Surprising product action grabs viewer focus.",
+        "thumbnailUrl": "/videos/demo-ad-0913.jpg"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/videos/demo-ad-0913.jpg",
+      "aiConceptImg": "/videos/demo-ad-0913.jpg",
+      "finalAdVideo": "/videos/demo-ad-0913.mp4"
+    }
+  },
+  {
+    "id": "proj-ugc-03",
+    "slug": "ugc-performance-sprint",
+    "title": "UGC PERFORMANCE SPRINT",
+    "tagline": "Relatable human-centric product demonstration that drives purchase intent.",
+    "client": "PERFORMANCE UGC",
+    "isSpec": true,
+    "industry": "AI UGC",
+    "category": "Direct Response Social",
+    "service": "AI UGC",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Direct Product Benefit + Social Proof Testimonial Flow",
+    "videoUrl": "/videos/demo-ad-0913-1.mp4",
+    "thumbnailUrl": "/videos/demo-ad-0913-1.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 9,
+    "overview": "Combining creator authenticity with commercial art direction so brands never look cheap while keeping direct response performance exceptionally high.",
+    "theIdea": "Demonstrating how the product effortlessly solves everyday friction with cheerful authenticity.",
+    "theApproach": {
+      "visualDirection": "Clean modern aesthetic with authentic creator charm.",
+      "background": "Aesthetic kitchen and living space.",
+      "lighting": "Bright cheerful natural illumination.",
+      "character": "Relatable talent holding and testing the product.",
+      "productStyling": "Clean hero packaging.",
+      "cameraMovement": "Selfie handheld with smooth stabilizer motion.",
+      "storytelling": "Before-and-after life transformation."
+    },
+    "theResult": "Drives scalable conversions for D2C e-commerce brands.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "BENEFIT HIGHLIGHTS",
+        "description": "Top 3 consumer benefits."
+      },
+      {
+        "step": "02",
+        "title": "CREATOR VOICE SYNTHESIS",
+        "description": "Warm friendly tone generation."
+      },
+      {
+        "step": "03",
+        "title": "FINAL SOCIAL EXPORT",
+        "description": "Ready-to-launch ad creative."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Product Try-on",
+        "duration": "0:00 - 0:04",
+        "camera": "Close selfie",
+        "purpose": "Credibility building",
+        "description": "Product applied with genuine smile.",
+        "thumbnailUrl": "/videos/demo-ad-0913-1.jpg"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/videos/demo-ad-0913-1.jpg",
+      "aiConceptImg": "/videos/demo-ad-0913-1.jpg",
+      "finalAdVideo": "/videos/demo-ad-0913-1.mp4"
+    }
+  },
+  {
+    "id": "proj-long-01",
+    "slug": "cinematic-product-commercial",
+    "title": "CINEMATIC PRODUCT COMMERCIAL",
+    "tagline": "High-fidelity AI commercial production engineered for premium brand prestige.",
+    "client": "COMMERCIAL SPEC CREATIVE",
+    "isSpec": true,
+    "industry": "LUXURY",
+    "category": "Commercial Production",
+    "service": "Product Commercials",
+    "year": "2026",
+    "format": "16:9",
+    "creativeAngle": "Broadcast Grade Studio Lighting & Fluid Macro Choreography",
+    "videoUrl": "/videos/long-ad-product-01.mp4",
+    "thumbnailUrl": "/videos/long-ad-product-01.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 10,
+    "overview": "A high-impact cinematic commercial designed for multi-channel brand positioning with broadcast-grade generative cinematography.",
+    "theIdea": "Commanding viewer attention through pristine lighting transitions and dynamic camera motion.",
+    "theApproach": {
+      "visualDirection": "Warm studio lighting with dramatic rim reflections and razor-sharp product detail.",
+      "background": "Architectural minimalist studio environment.",
+      "lighting": "Chiaroscuro key with golden accents and specular reflections.",
+      "character": "Solo dynamic interaction with product.",
+      "productStyling": "Master studio placement with sharp branding fidelity.",
+      "cameraMovement": "Sweeping orbital tracking with macro reveal.",
+      "storytelling": "From anticipation to triumphant commercial delivery."
+    },
+    "theResult": "A full-length 16:9 commercial master delivering high conversion and brand memorability.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "PRODUCT CAD & PACKSHOT",
+        "description": "High-res reference geometry setup."
+      },
+      {
+        "step": "02",
+        "title": "CINEMATIC DIRECTION",
+        "description": "Studio lighting and angle storyboard."
+      },
+      {
+        "step": "03",
+        "title": "AI MOTION GENERATION",
+        "description": "Diffusion-based camera move synthesis."
+      },
+      {
+        "step": "04",
+        "title": "COLOR GRADE & SOUND",
+        "description": "Broadcast master export."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Hero Commercial Shot",
+        "duration": "0:00 - 0:10",
+        "camera": "Cinematic Orbit",
+        "purpose": "Prestige brand commercial",
+        "description": "Product highlighted under dynamic studio illumination.",
+        "thumbnailUrl": "/videos/long-ad-product-01.jpg"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/videos/long-ad-product-01.jpg",
+      "aiConceptImg": "/videos/long-ad-product-01.jpg",
+      "finalAdVideo": "/videos/long-ad-product-01.mp4"
+    }
+  },
+  {
+    "id": "proj-long-02",
+    "slug": "dynamic-vertical-product-sprint",
+    "title": "DYNAMIC VERTICAL PRODUCT SPRINT",
+    "tagline": "Thumb-stopping 9:16 direct-response commercial with high-converting visual friction.",
+    "client": "DIRECT RESPONSE SPRINT",
+    "isSpec": true,
+    "industry": "TECH",
+    "category": "Direct Response & Social Ads",
+    "service": "Product Commercials",
+    "year": "2026",
+    "format": "9:16",
+    "creativeAngle": "Fast-Paced Mobile Hook + High Shutter Product Immersion",
+    "videoUrl": "/videos/long-ad-product-02.mp4",
+    "thumbnailUrl": "/videos/long-ad-product-02.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 11,
+    "overview": "Engineered specifically for 9:16 mobile feeds (Instagram Reels & TikTok) to drive immediate click-through and purchase intent.",
+    "theIdea": "First 3 seconds break feed scroll patterns through aggressive visual hook and hyper-realistic product texture.",
+    "theApproach": {
+      "visualDirection": "High-energy mobile editorial with vibrant contrast and clean cuts.",
+      "background": "Modern urban studio backdrop.",
+      "lighting": "Dynamic daylight with neon edge highlights.",
+      "character": "Engaging talent interacting with product in real-world context.",
+      "productStyling": "Hero product front and center.",
+      "cameraMovement": "Quick push-ins and vertical tilts.",
+      "storytelling": "Problem-to-solution visual progression."
+    },
+    "theResult": "High-performing 9:16 vertical commercial optimized for social media ad performance.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "HOOK SCRIPTING",
+        "description": "Thumb-stopping angle development."
+      },
+      {
+        "step": "02",
+        "title": "MOTION SYNTHESIS",
+        "description": "AI generated hyper-realistic action."
+      },
+      {
+        "step": "03",
+        "title": "SOCIAL MASTER",
+        "description": "Sound-synced 9:16 delivery."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Hook Sequence",
+        "duration": "0:00 - 0:10",
+        "camera": "Rapid vertical push",
+        "purpose": "Scroll stopping",
+        "description": "Dynamic reveal of product in high-energy flow.",
+        "thumbnailUrl": "/videos/long-ad-product-02.jpg"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/videos/long-ad-product-02.jpg",
+      "aiConceptImg": "/videos/long-ad-product-02.jpg",
+      "finalAdVideo": "/videos/long-ad-product-02.mp4"
+    }
+  },
+  {
+    "id": "proj-long-03",
+    "slug": "studio-lighting-commercial-reveal",
+    "title": "STUDIO LIGHTING COMMERCIAL REVEAL",
+    "tagline": "Broadcast-grade cinematic lighting choreography and sensory product transformation.",
+    "client": "PRESTIGE BRAND CAMPAIGN",
+    "isSpec": true,
+    "industry": "LUXURY",
+    "category": "Brand Commercials",
+    "service": "Product Commercials",
+    "year": "2026",
+    "format": "16:9",
+    "creativeAngle": "Chiaroscuro Illumination + Precision Industrial Design",
+    "videoUrl": "/videos/long-ad-product-03.mp4",
+    "thumbnailUrl": "/videos/long-ad-product-03.jpg",
+    "featured": true,
+    "status": "published",
+    "order": 12,
+    "overview": "A high-end cinematic product film emphasizing precision engineering, metallic reflections, and luxury brand prestige.",
+    "theIdea": "Visualizing craftsmanship through slow moving lighting beams that sculpt the physical geometry of the product.",
+    "theApproach": {
+      "visualDirection": "Haute horlogerie and luxury commercial noir aesthetic.",
+      "background": "Obsidian stone and dark glass floor reflections.",
+      "lighting": "Laser-precision blade lighting sweeping across surfaces.",
+      "character": "Minimalist luxury atmosphere.",
+      "productStyling": "Pristine macro product inspection.",
+      "cameraMovement": "Slow gliding horizontal rail tracking.",
+      "storytelling": "The revelation of perfection."
+    },
+    "theResult": "A full broadcast-quality 16:9 commercial master delivering commanding presence.",
+    "creativeBreakdown": [
+      {
+        "step": "01",
+        "title": "LIGHT RIG DESIGN",
+        "description": "Virtual studio lighting setup."
+      },
+      {
+        "step": "02",
+        "title": "MACRO SYNTHESIS",
+        "description": "Photorealistic reflection rendering."
+      },
+      {
+        "step": "03",
+        "title": "CINEMATIC FINISH",
+        "description": "4K graded commercial master."
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": "01",
+        "title": "Light Sweep",
+        "duration": "0:00 - 0:10",
+        "camera": "Gliding macro rail",
+        "purpose": "Atmospheric prestige hook",
+        "description": "Light beam reveals the pristine facets of the product.",
+        "thumbnailUrl": "/videos/long-ad-product-03.jpg"
+      }
+    ],
+    "beforeAfter": {
+      "rawProductImg": "/videos/long-ad-product-03.jpg",
+      "aiConceptImg": "/videos/long-ad-product-03.jpg",
+      "finalAdVideo": "/videos/long-ad-product-03.mp4"
+    }
+  }
 ];
 
 export const CORE_SERVICES = [
