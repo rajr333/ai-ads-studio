@@ -74,15 +74,19 @@ export default function IndustrySection() {
           </div>
 
           {/* Sticky Visual Showcase on the Right */}
-          <div className="lg:col-span-5 sticky top-28 bg-neutral-900 rounded-[2.5rem] border border-neutral-300/80 overflow-hidden shadow-xl">
-            <div className="relative aspect-[9/16] max-h-[580px] w-full overflow-hidden">
+          <div className="lg:col-span-5 sticky top-28 bg-neutral-900 rounded-[2rem] sm:rounded-[2.5rem] border border-neutral-300/80 overflow-hidden shadow-xl">
+            <div className="relative aspect-[9/16] max-h-[480px] sm:max-h-[580px] w-full overflow-hidden">
               <video
                 key={activeIndustry.id}
                 src={activeIndustry.videoPreview}
+                poster={activeIndustry.videoPreview.replace(/\.mp4$/i, ".jpg")}
+                preload="metadata"
                 autoPlay
                 loop
                 muted
                 playsInline
+                // @ts-ignore
+                webkit-playsinline="true"
                 className="w-full h-full object-cover animate-in fade-in duration-500"
               />
 

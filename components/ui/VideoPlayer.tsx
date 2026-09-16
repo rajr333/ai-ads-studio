@@ -125,11 +125,14 @@ export default function VideoPlayer({
       <video
         ref={videoRef}
         src={src}
-        poster={poster}
+        poster={poster || (src ? src.replace(/\.mp4$/i, ".jpg") : undefined)}
+        preload="metadata"
         autoPlay={autoPlay}
         loop={loop}
         muted={isMuted}
         playsInline
+        // @ts-ignore
+        webkit-playsinline="true"
         onClick={togglePlay}
         className="w-full h-full object-cover cursor-pointer"
       />

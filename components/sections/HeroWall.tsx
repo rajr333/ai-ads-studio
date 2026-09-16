@@ -98,15 +98,19 @@ export default function HeroWall() {
               key={`${item.title}-${idx}`}
               onClick={() => setSelectedVideo(item)}
               data-cursor="PLAY"
-              className="group relative flex-shrink-0 w-72 sm:w-80 md:w-88 aspect-[9/16] bg-neutral-900 rounded-[2rem] border border-neutral-300/80 overflow-hidden transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl shadow-md cursor-pointer select-none"
+              className="group relative flex-shrink-0 w-60 sm:w-72 md:w-80 aspect-[9/16] bg-neutral-900 rounded-[1.8rem] sm:rounded-[2rem] border border-neutral-300/80 overflow-hidden transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl shadow-md cursor-pointer select-none"
             >
-              {/* Video Player (Autoplay Muted Loop) */}
+              {/* Video Player (Autoplay Muted Loop with Instant Poster) */}
               <video
                 src={item.videoUrl}
+                poster={item.videoUrl.replace(/\.mp4$/i, ".jpg")}
+                preload="metadata"
                 autoPlay
                 loop
                 muted
                 playsInline
+                // @ts-ignore
+                webkit-playsinline="true"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95 group-hover:brightness-105"
               />
 

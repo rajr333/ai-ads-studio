@@ -110,10 +110,14 @@ export default function PortfolioFilter({ projects }: PortfolioFilterProps) {
                   >
                     <video
                       src={project.videoUrl}
+                      poster={project.videoUrl.replace(/\.mp4$/i, ".jpg")}
+                      preload="metadata"
                       autoPlay
                       loop
                       muted
                       playsInline
+                      // @ts-ignore
+                      webkit-playsinline="true"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95 group-hover:brightness-105"
                     />
 

@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
 
           {/* Main Editorial Headline */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-serif text-black leading-[1.03] tracking-tight font-normal">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-serif text-black leading-[1.05] tracking-tight font-normal break-words">
             AI UGC That <br />
             Makes Brands <br />
             <span className="text-neutral-400 font-serif italic font-light">
@@ -32,16 +32,16 @@ export default function Hero() {
           </h1>
 
           {/* Subheadline description */}
-          <p className="text-base sm:text-lg text-neutral-600 font-body max-w-xl leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-neutral-600 font-body max-w-xl leading-relaxed">
             I create scroll-stopping AI-powered UGC ads and creative content designed to help brands showcase their products in a modern, authentic, and engaging way.
           </p>
 
           {/* Actions Row */}
-          <div className="flex flex-wrap items-center gap-5 pt-2">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-5 pt-2">
             <Link
               href="/#contact"
               data-cursor="OPEN"
-              className="group inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black text-white text-xs font-semibold uppercase tracking-wider shadow-lg hover:bg-neutral-800 hover:shadow-xl transition-all duration-200"
+              className="group inline-flex items-center gap-2 px-7 sm:px-8 py-3.5 sm:py-4 rounded-full bg-black text-white text-xs font-semibold uppercase tracking-wider shadow-lg hover:bg-neutral-800 hover:shadow-xl transition-all duration-200"
             >
               <span>WORK WITH ME</span>
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -50,7 +50,7 @@ export default function Hero() {
             <Link
               href="/#work"
               data-cursor="VIEW"
-              className="inline-flex items-center gap-2 px-6 py-4 text-neutral-800 hover:text-black text-xs font-mono uppercase tracking-wider font-semibold transition-colors"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 text-neutral-800 hover:text-black text-xs font-mono uppercase tracking-wider font-semibold transition-colors"
             >
               <span>VIEW MY WORK</span>
               <ChevronDown className="w-4 h-4" />
@@ -61,16 +61,20 @@ export default function Hero() {
         {/* Right Column: Large Rounded Editorial Photo / Video Card */}
         <div className="lg:col-span-5 relative flex justify-center lg:justify-end">
           <div 
-            className="relative w-full max-w-md aspect-[3/4] sm:aspect-[4/5] rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-neutral-200/80 bg-neutral-100 group cursor-pointer"
+            className="relative w-full max-w-md aspect-[3/4] sm:aspect-[4/5] rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-neutral-200/80 bg-neutral-100 group cursor-pointer"
             onClick={() => setIsPlayingVideo(!isPlayingVideo)}
           >
             {isPlayingVideo ? (
               <video
                 src="/videos/editorial-lifestyle.mp4"
+                poster="/videos/editorial-lifestyle.jpg"
+                preload="metadata"
                 autoPlay
                 loop
                 muted
                 playsInline
+                // @ts-ignore
+                webkit-playsinline="true"
                 className="w-full h-full object-cover filter contrast-[105%]"
               />
             ) : (
